@@ -344,10 +344,10 @@ fn modify_image_request(request: Request) {
 
 #[handle_url]
 fn handle_url(url: String) -> Result<DeepLink> {
-	// https://blogtruyenmoi.com/19588/uchi-no-hentai-maid-ni-osowareteru
-	// 'https:', '', 'blogtruyenmoi.com', '19588', 'uchi-no-hentai-maid-ni-osowareteru'
-	// https://blogtruyenmoi.com/c694877/shounen-no-abyss-chap-93-ket-thuc
-	// 'https:', '', 'blogtruyenmoi.com', 'c694877', 'shounen-no-abyss-chap-93-ket-thuc'
+	// https://moiblogtruyenvn.com/19588/uchi-no-hentai-maid-ni-osowareteru
+	// 'https:', '', 'blogtruyenvn.com', '19588', 'uchi-no-hentai-maid-ni-osowareteru'
+	// https://blogtruyenvn.com/c694877/shounen-no-abyss-chap-93-ket-thuc
+	// 'https:', '', 'blogtruyenvn.com', 'c694877', 'shounen-no-abyss-chap-93-ket-thuc'
 	let split = url.split('/').collect::<Vec<&str>>();
 	let id = format!("/{}", &split[3..].join("/"));
 	if split[3].contains('c') {
