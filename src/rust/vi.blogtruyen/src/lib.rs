@@ -18,7 +18,7 @@ use aidoku::{
 
 static mut CACHED_MANGA_ID: Option<String> = None;
 static mut CACHED_MANGA: Option<Vec<u8>> = None;
-static BASE_URL: &str = "https://blogtruyenmoi.com";
+static BASE_URL: &str = "https://blogtruyenvn.com";
 
 fn cache_manga_page(id: &str) {
 	if unsafe { CACHED_MANGA_ID.is_some() } && unsafe { CACHED_MANGA_ID.clone().unwrap() } == id {
